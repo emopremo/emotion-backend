@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: emotion-backend
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python server.py"
+    plan: free
+    envVars:
+      - key: PORT
+        value: 5000
